@@ -1,3 +1,30 @@
+function Solution4(){
+	
+	var largestFactor=1;
+	var currentPrime=1;
+	var number = 600851475143;
+	var isPrime=1;
+	
+	for (i=2; i<number; i++){
+		isPrime=1;
+		for (var j = 2; j < i; j++) {
+			if(i%j===0){
+				isPrime=0;
+			}
+			
+		}
+
+		if(isPrime&&number%i===0){
+					largestFactor=i;
+		}
+			
+		
+
+
+	}
+	document.getElementById("solution4").innerHTML="Largest Prime factor of "+ number+" = "+largestFactor;
+}
+
 function Solution3(){
 	
 	var largestFactor=1;
