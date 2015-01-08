@@ -1,3 +1,30 @@
+function Solution5(){
+	
+	var currentNum="10";
+	var divisible=false;
+	var currentDivisible = true;
+	var i;
+
+	while(divisible==false){
+		currentDivisible=true;
+		currentNum=currentNum+1;
+		i=1;
+		
+		do{
+		if(currentNum%i!=0){
+			currentDivisible=false;
+			}
+			i=i+1;
+		}while(currentDivisible==false);
+		if(currentDivisible==true){
+			divisible==true;
+		};
+	} 
+		
+	document.getElementById("solution5").innerHTML="Largest palindromic number which is product of 2 three digit numbers = "+currentNum;
+}
+
+
 function Solution4(){
 	
 	var currentNum="12345";
