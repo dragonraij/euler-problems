@@ -1,28 +1,29 @@
 function Solution4(){
 	
-	var largestFactor=1;
-	var currentPrime=1;
-	var number = 600851475143;
-	var isPrime=1;
+	var currentNum="12345";
+	var currentInverse="";
+	var largest = 0;
 	
-	for (i=2; i<number; i++){
-		isPrime=1;
-		for (var j = 2; j < i; j++) {
-			if(i%j===0){
-				isPrime=0;
+	
+	for (var j = 999; j > 500; j--) {
+		for (var k = 999; k > 500; k--) {
+			currentNum=j*k;
+			currentNum=currentNum.toString();
+			currentInverse="";
+			for (i=currentNum.length; i>=0; i--){
+				currentInverse=currentInverse+currentNum.charAt(i);
+				if(currentNum===currentInverse &&currentInverse>largest){
+				largest=currentNum;
 			}
-			
-		}
-
-		if(isPrime&&number%i===0){
-					largestFactor=i;
-		}
-			
-		
 
 
 	}
-	document.getElementById("solution4").innerHTML="Largest Prime factor of "+ number+" = "+largestFactor;
+		}		
+
+	}
+
+	
+	document.getElementById("solution4").innerHTML="Largest palindromic number which is product of 2 three digit numbers = "+largest;
 }
 
 function Solution3(){
@@ -40,6 +41,8 @@ function Solution3(){
 			}
 			
 		}
+
+
 
 		if(isPrime&&number%i===0){
 					largestFactor=i;
