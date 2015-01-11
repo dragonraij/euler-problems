@@ -5,6 +5,7 @@ function Solution5(){
 	var currentDivisible = true;
 	var i;
 
+
 	while(divisible==false){
 		currentDivisible=true;
 		currentNum=currentNum+1;
@@ -21,8 +22,8 @@ function Solution5(){
 		};
 	} 
 		
-	document.getElementById("solution5").innerHTML="Largest palindromic number which is product of 2 three digit numbers = "+currentNum+currentDivisible+divisible;
-}
+	document.getElementById("solution5").innerHTML="Largest palindromic number which is product of 2 three digit numbers = "+currentNum+currentDivisible+""+divisible;
+};
 
 
 function Solution4(){
