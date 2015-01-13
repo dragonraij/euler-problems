@@ -1,4 +1,9 @@
-function Solution5(){
+function Solution6(){
+	
+	
+currentNum=1 * 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19;
+	document.getElementById("solution5").innerHTML="Smallest product = "+currentNum;
+};function Solution5(){
 	
 	
 currentNum=1 * 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19;
