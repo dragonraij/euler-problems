@@ -4,17 +4,20 @@ function Solution6(){
 var sum =0;
 var squares=0;
 
-for (var i = 0; i <= 10; i++) {
+for (var i = 0; i <= 100; i++) {
 	sum=sum+i;
 	squares= squares + (i*i);
 	
 };
-	document.getElementById("solution5").innerHTML="Smallest product = "+currentNum;
-};function Solution5(){
+sum=sum*sum;// square the sums 
+	document.getElementById("solution6").innerHTML="Difference of first 100 square sums and sum squares = "+(sum-squares);
+};
+
+function Solution5(){
 	
 	
 currentNum=1 * 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19;
-	document.getElementById("solution5").innerHTML="Smallest product = "+currentNum;
+	document.getElementById("solution5").innerHTML="Difference of first 100 square sums and sum squares = "+currentNum;
 };
 
 
