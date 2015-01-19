@@ -1,3 +1,16 @@
+function Solution7(){
+	
+	
+var primes =[0];
+var current=0;
+
+for (var i = 0; i <= 100; i++) {
+	
+};
+sum=sum*sum;// square the sums 
+	document.getElementById("solution7").innerHTML="10001st prime number is "+(current);
+};
+
 function Solution6(){
 	
 	
