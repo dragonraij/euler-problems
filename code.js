@@ -1,14 +1,25 @@
 function Solution7(){
 	
 	
-var primes =[0];
+var primes = new Array();
 var current=0;
 
-for (var i = 0; i <= 100; i++) {
+for (var i = 2; i <= 10; i++) {
+	prime=1 // flag current number as prime
+	
+	//for	(index = 0; index < primes.length; index++) {
+    //if (i%primes[index]==0) {
+	
+	//};
+	
+}
+if(prime==1){
+		primes.push(i)
+	
 	
 };
-sum=sum*sum;// square the sums 
-	document.getElementById("solution7").innerHTML="10001st prime number is "+(current);
+
+	document.getElementById("solution7").innerHTML="10001st prime number is "+(primes);
 };
 
 function Solution6(){
