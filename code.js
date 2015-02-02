@@ -2,24 +2,27 @@ function Solution7(){
 	
 	
 var primes = new Array();
-var current=0;
+primes.push(2);
+var current=3;
 
-for (var i = 2; i <= 17; i++) {
-	prime=1 // flag current number as prime
+while(primes.length<=10000) {
+	prime=1 // flag current number as prime	
 	
-	//for	(index = 0; index < primes.length; index++) {
-    //if (i%primes[index]==0) {
+	for	(index = 0; index < primes.length; index++) {
+    	if (current%primes[index]==0) {
+			prime=0; // if divisible number is not prime
+		};
 	
-	//};
-	
+	};	
+		
+	if(prime==1){
+		primes.push(current)	// add prime number to list
+	}
+	current=current+1;// increment current number
 }
-if(prime==1){
-		primes.push(i)
-	
-	
-};
 
-	document.getElementById("solution7").innerHTML="10001st prime number is "+(primes.length);
+
+	document.getElementById("solution7").innerHTML="10001st prime number is "+(primes.pop());
 };
 
 function Solution6(){
