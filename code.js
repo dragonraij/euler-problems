@@ -4,7 +4,7 @@ function Solution7(){
 var primes = new Array();
 var current=0;
 
-for (var i = 2; i <= 10; i++) {
+for (var i = 2; i <= 17; i++) {
 	prime=1 // flag current number as prime
 	
 	//for	(index = 0; index < primes.length; index++) {
@@ -19,7 +19,7 @@ if(prime==1){
 	
 };
 
-	document.getElementById("solution7").innerHTML="10001st prime number is "+(primes);
+	document.getElementById("solution7").innerHTML="10001st prime number is "+(primes.length);
 };
 
 function Solution6(){
