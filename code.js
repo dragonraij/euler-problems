@@ -1,3 +1,30 @@
+function Solution8(){
+	
+	
+var primes = new Array();
+primes.push(2);
+var current=3;
+
+while(primes.length<=10000) {
+	prime=1 // flag current number as prime	
+	
+	for	(index = 0; index < primes.length; index++) {
+    	if (current%primes[index]==0) {
+			prime=0; // if divisible number is not prime
+		};
+	
+	};	
+		
+	if(prime==1){
+		primes.push(current)	// add prime number to list
+	}
+	current=current+1;// increment current number
+}
+
+
+	document.getElementById("solution8").innerHTML="10001st prime number is "+(primes.pop());
+};
+
 function Solution7(){
 	
 	
