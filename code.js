@@ -22,7 +22,7 @@ while(primes.length<=10000) {
 }
 
 
-	document.getElementById("solution8").innerHTML="10001st prime number is "+(primes.pop());
+	document.getElementById("solution8").innerHTML="Value of product is "+(primes.pop());
 };
 
 function Solution7(){
