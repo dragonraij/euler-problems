@@ -1,3 +1,18 @@
+function Solution9(){
+
+var a=0;
+var b=0;
+var c=0;
+
+do{
+
+}
+while(a+b+c!=1000);
+
+
+	document.getElementById("solution9").innerHTML="The pythogorian triplet which add up to 100 are:  "+a+" "+b+" "+c;
+};
+
 function Solution8(){
 
 var current =1;
