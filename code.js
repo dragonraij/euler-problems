@@ -4,6 +4,19 @@ var a=0;
 var b=0;
 var c=0;
 
+for (var i = 0; i < 10; i++) {
+	for (var j = 0; j < 10; j++) {
+			a=Math.pow(i,2);
+			b=Math.pow(j,2);
+			c=Math.sqrt(a+b);
+			if(c == Math.floor(c) && (a+b+c)==12{
+				a=i;
+				b=j;
+				i=j=1111;
+			}
+		};	
+};
+
 do{
 
 }
