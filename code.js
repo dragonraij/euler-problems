@@ -4,17 +4,14 @@ var a=0;
 var b=0;
 var c=0;
 
-for (var i = 0; i < 10; i++) {
-	for (var j = 0; j < 10; j++) {
-			a=Math.pow(i,2);
-			b=Math.pow(j,2);
-			c=Math.sqrt(a+b);
-			if(c == Math.floor(c) && (a+b+c)==12){
-				a=i;
-				b=j;
-				i=j=1111;
+for (var i = 1; i < 1000; i++) {
+	for (var j = 2; j < 1000; j++) {
+			if(i*i+j*j==(1000-i-j)*(1000-i-j)){
+				a=j;
+				b=i;
+				c=1000-i-j;
 			}
-		};	
+		};		
 };
 
 /*do{
@@ -23,7 +20,7 @@ for (var i = 0; i < 10; i++) {
 while(a+b+c!=1000);
 */
 
-	document.getElementById("solution9").innerHTML="The pythogorian triplet which add up to 100 are:  "+a+" "+b+" "+c;
+	document.getElementById("solution9").innerHTML="The pythogorian triplet which add up to 1000 are:  "+a+" "+b+" "+c;
 };
 
 function Solution8(){
