@@ -1,3 +1,37 @@
+// 21/2/14
+
+function Solution10(){
+	var primes = new Array();
+	var isPrime=true;
+	// add 2 as the first prime
+	primes.push(2);
+	var total = 2;
+
+	//Loop through the first two million numbers
+	for (var i = 3; i < 10; i++) {
+		//start by assuming number is prime
+		isPrime=true;
+
+		//loop through known primes checking if current number is divisible by known primes
+		for (var prime=0; prime < primes.length; prime++){
+			//if current number(i) is divisible by a prime, set is prime to false and stop checking
+			if(i%prime==0){
+				isPrime=false;
+				break;
+			};
+
+		//If isPrime is still true, add the current number to list of primes and adds to total
+		if(isPrime) {
+			primes.push(i);
+			total+=i;
+		}	
+		};
+
+	};
+
+	document.getElementById("solution10").innerHTML="The sum  of the primes below two million  is "+total;
+};
+
 function Solution9(){
 
 var a=0;
