@@ -20,11 +20,13 @@ function Solution10(){
 				break;
 			};
 
+		}
 		//If isPrime is still true, add the current number to list of primes and adds to total
 		if(isPrime) {
 			primes.push(i);
 			total+=i;
-		}	
+			
+			
 		};
 
 	};
