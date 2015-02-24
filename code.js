@@ -15,7 +15,7 @@ function Solution10(){
 		//loop through known primes checking if current number is divisible by known primes
 		for (var prime=0; prime < primes.length; prime++){
 			//if current number(i) is divisible by a prime, set is prime to false and stop checking
-			if(i%prime==0){
+			if(i%primes[prime]==0){
 				isPrime=false;
 				break;
 			};
