@@ -8,7 +8,7 @@ function Solution10(){
 	var total = 2;
 
 	//Loop through the first two million numbers
-	for (var i = 3; i < 10; i++) {
+	for (var i = 3; i < 2000000; i++) {
 		//start by assuming number is prime
 		isPrime=true;
 
